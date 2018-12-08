@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_raking"
+        android:icon="@drawable/ic_cup_"
+        android:title="@string/menu_raking"
+        />
+
+    <item
+        android:id="@+id/navigation_quiz"
+        android:icon="@drawable/ic_puzzle"
+        android:title="@string/menu_quiz" />
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/ic_user_black_24dp"
+        android:title="@string/menu_perfil" />
+
+</menu>
