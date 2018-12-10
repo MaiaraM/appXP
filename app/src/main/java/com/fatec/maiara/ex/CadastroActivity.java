@@ -38,28 +38,6 @@ public class CadastroActivity extends AppCompatActivity  {
         ButterKnife.bind(this);
 
         helper = new FormularioHelper();
-        List<String> spinner  = new ArrayList<>();
-        spinner.add("Professor");
-        spinner.add("Aluno");
-        Spinner campoTipo;
-        campoTipo = (Spinner)findViewById(R.id.tipo_conta);
-
-
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spinner);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        campoTipo.setAdapter(dataAdapter);
-
-        campoTipo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
 
         btnSalvar.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +45,7 @@ public class CadastroActivity extends AppCompatActivity  {
             public void onClick(View v) {
                 helper.FormularioCadastro(campoNome, campoEmail, campoSenha);
                 helper.novoUsuario();
-                Toast.makeText(CadastroActivity.this, " Obrigad apor cadastrar " + campoNome.getText() + " !", Toast.LENGTH_LONG).show();
+                Toast.makeText(CadastroActivity.this, " Obrigada por cadastrar " + campoNome.getText() + " !", Toast.LENGTH_LONG).show();
                 finish();
             }
         });

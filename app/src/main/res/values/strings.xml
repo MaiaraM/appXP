@@ -11,5 +11,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_password">Confirmar Senha</string>
+    <string name="password">Senha</string>
+    <string name="name">Nome</string>
+    <string name="titulo_quiz">Escolha o tipo de Quiz</string>
+    <string name="biologicas">Biologicas</string>
+    <string name="exatas">Exatas</string>
+    <string name="humanas">Humanas</string>
 
 </resources>

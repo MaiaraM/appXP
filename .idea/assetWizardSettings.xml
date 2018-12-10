@@ -83,8 +83,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_puzzle" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/../../X.P./puzzle.svg" />
+                            <entry key="outputName" value="ic_open_book" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../../X.P./open-book.svg" />
                           </map>
                         </option>
                       </PersistentState>

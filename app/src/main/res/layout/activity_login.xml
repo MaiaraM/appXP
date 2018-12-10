@@ -19,19 +19,37 @@
         android:orientation="vertical">
 
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lg_layout_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="@string/email" />
+            android:layout_height="wrap_content">
 
-        <EditText
+            <EditText
+                android:id="@+id/lg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/email" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lg_layout_senha"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/senha"
-            android:layout_margin="5dp"
-            android:ellipsize="start"
-            android:inputType="textPassword"/>
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/lg_senha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/senha"
+                android:layout_margin="5dp"
+                android:ellipsize="start"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
 
         <Button android:id="@+id/login_entrar"
             android:layout_width="match_parent"

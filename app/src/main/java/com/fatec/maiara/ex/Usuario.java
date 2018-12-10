@@ -1,20 +1,21 @@
 package com.fatec.maiara.ex;
 
+import android.content.Intent;
+
 public class Usuario {
-    private Long id;
+
     private String nome;
     private String email;
     private String senha;
-    private String tipoConta;
-    private String pontos;
 
-    public Long getId() {
-        return id;
+    private Integer pontos;
+
+    public Usuario(String nome, Integer pontos) {
+
+        this.nome = nome;
+        this.pontos = pontos;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
@@ -36,23 +37,15 @@ public class Usuario {
         return senha;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 
-    public String getTipoConta() {
-        return tipoConta;
-    }
-
-    public void setTipoConta(String tipoConta) {
-        this.tipoConta = tipoConta;
-    }
-
-    public String getPontos() {
+    public Integer getPontos() {
         return pontos;
     }
 
-    public void setPontos(String pontos) {
+    public void setPontos(Integer pontos) {
         this.pontos = pontos;
+    }
+
+    public void setSenha(String s) {
     }
 }

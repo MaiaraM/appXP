@@ -4,11 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QuizFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Quiz" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_quiz"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/biologicas"
+            android:layout_margin="20dp"
+            android:padding="30dp"
+            android:drawableLeft="@drawable/ic_dna"
+            android:background="#fec48053"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/exatas"
+            android:drawableLeft="@drawable/ic_calculator"
+            android:padding="30dp"
+            android:layout_margin="20dp"
+            android:background="#fe52bad7"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/humanas"
+            android:padding="30dp"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/ic_open_book"
+            android:background="#fe90df4a"
+           />
+    </LinearLayout>
 
 </FrameLayout>

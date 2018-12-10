@@ -20,10 +20,12 @@ public class FormularioHelper {
     }
 
     public Usuario novoUsuario(){
-        usuario = new Usuario();
+
         usuario.setNome(campoNome.getText().toString());
         usuario.setEmail(campoEmail.getText().toString());
         usuario.setSenha(campoSenha.getText().toString());
+
+        usuario = new Usuario(campoNome.getText().toString(), 0);
         return usuario;
     }
 
